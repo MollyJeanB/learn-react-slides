@@ -1,433 +1,178 @@
 ---
-theme: seriph
-background: https://source.unsplash.com/collection/94734566/1920x1080
+theme: default
 class: text-center
 highlighter: shiki
-lineNumbers: false
+lineNumbers: true
 info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
+  ## React Slide Deck
 
   Learn more at [Sli.dev](https://sli.dev)
 drawings:
   persist: false
 transition: slide-left
-title: Welcome to Slidev
+title: Intro to React
 ---
-
-# Learn react!
-
-Presentation slides for developers
-
-<div class="pt-12">
-  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    Press Space for next page <carbon:arrow-right class="inline"/>
-  </span>
+<div class='wrapper'>
+<img src='https://media.giphy.com/media/eNAsjO55tPbgaor7ma/giphy.gif' alt='Animated react logo' class='image' />
 </div>
 
+# React!
+
+A brief introduction.
+
+
 <div class="abs-br m-6 flex gap-2">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" alt="GitHub"
+  <a href="https://github.com/MollyJeanB/learn-react-slides" target="_blank" alt="GitHub"
     class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
     <carbon-logo-github />
   </a>
 </div>
 
-<!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
--->
-
----
-transition: fade-out
----
-
-# What is Slidev?
-
-Slidev is a slides maker and presenter designed for developers, consist of the following features
-
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - theme can be shared and used with npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embedding Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export into PDF, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - anything possible on a webpage
-
-<br>
-<br>
-
-Read more about [Why Slidev?](https://sli.dev/guide/why)
-
-<!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/guide/syntax#embedded-styles
--->
-
 <style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+.wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.image {
+	width: 200px;
 }
 </style>
 
 <!--
-Here is another comment.
+Welcome! Today we're going to talk about React. I have a short intro lesson for you, and then we'll dive right into some code.
+If you touch any frontend code at EquipmentShare, there’s a good chance it’ll be written in React
+I tend to get very excited and speak a little too quickly, so please let me know if you need me to slow down or repeat anything.
+
 -->
-
 ---
-layout: default
+layout: center
+class: text-center
 ---
+# What is React.js?
 
-# Table of contents
-
-```
-<Toc minDepth="1" maxDepth="5"></Toc>
-```
-
-<Toc></Toc>
-
----
-transition: slide-up
-
-level: 2
+Tell me about your experience with React so far
 ---
 
-# Navigation
+# React is...
 
-Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/navigation.html)
+- 🧩 A open source JavaScript library built by Meta
+- 📝 According to the [React docs](https://react.dev/), it is a “declarative, efficient, and flexible JavaScript library for building user interfaces." It lets you compose complex UIs from small and isolated pieces of code called 'components'
+- 👩‍💻 One of the most popular ways to build modern web applications (over 9 million weekly downloads from npm!)
+- ⚡️ Super fast, flexible, and scalable
+- 🎂 10 years old as of May 2023
+- 🥳 An absolute joy! 
 
-### Keyboard Shortcuts
-
-|     |     |
-| --- | --- |
-| <kbd>right</kbd> / <kbd>space</kbd>| next animation or slide |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd> | previous slide |
-| <kbd>down</kbd> | next slide |
-
-<!-- https://sli.dev/guide/animations.html#click-animations -->
-<img
-  v-click
-  class="absolute -bottom-9 -left-7 w-80 opacity-50"
-  src="https://sli.dev/assets/arrow-bottom-left.svg"
-/>
-<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
-
----
-layout: image-right
-image: https://source.unsplash.com/collection/94734566/1920x1080
----
-
-# Code
-
-Use code snippets and get the highlighting directly![^1]
-
-```ts {all|2|1-6|9|all}
-interface User {
-  id: number
-  firstName: string
-  lastName: string
-  role: string
-}
-
-function updateUser(id: number, update: User) {
-  const user = getUser(id)
-  const newUser = { ...user, ...update }
-  saveUser(id, newUser)
-}
-```
-
-<arrow v-click="3" x1="400" y1="420" x2="230" y2="330" color="#564" width="3" arrowSize="1" />
-
-[^1]: [Learn More](https://sli.dev/guide/syntax.html#line-highlighting)
+<div class='wrapper'>
+	<img src='https://media.giphy.com/media/9DtysFl2adFSEeiL47/giphy.gif' alt='Animated react logo' class='image' />
+</div>
 
 <style>
-.footnotes-sep {
-  @apply mt-20 opacity-10;
+.wrapper {
+	display: flex;
+	justify-content: center;
 }
-.footnotes {
-  @apply text-sm opacity-75;
-}
-.footnote-backref {
-  display: none;
+
+.image {
+	width: 350px;
 }
 </style>
 
----
-
-# Components
-
-<div grid="~ cols-2 gap-4">
-<div>
-
-You can use Vue components directly inside your slides.
-
-We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
-
-```html
-<Counter :count="10" />
-```
-
-<!-- ./components/Counter.vue -->
-<Counter :count="10" m="t-4" />
-
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
-
-</div>
-<div>
-
-```html
-<Tweet id="1390115482657726468" />
-```
-
-<Tweet id="1390115482657726468" scale="0.65" />
-
-</div>
-</div>
-
 <!--
-Presenter note with **bold**, *italic*, and ~~striked~~ text.
+- React components are often compared to building with legos-using many self-contained discrete parts to make up a whole. I think that maybe Matryoshka dolls are a better analogy, because components can be nested inside each other, and they can be reused in different places. But maybe the best visual analogy would be a set of Matryoshka dolls made out of legos.
+- As probably the most popular way to build web applications these days, React is an incredibly wide-ranging library. There are many, many approaches to writing react code and about a zillion tools and compatible packages and libraries to explore
+- That said, today’s lesson will be a pretty brief introduction to get you started writing and updating components. If you’ve already work with React, this may be a bit of a refresher for you
 
-Also, HTML elements are valid:
-<div class="flex w-full">
-  <span style="flex-grow: 1;">Left content</span>
-  <span>Right content</span>
-</div>
 -->
-
-
 ---
-class: px-20
 ---
+# The Virtual DOM
+React was developed to solve a problem: how to efficiently update the Document Object Model (DOM).
 
-# Themes
+In React, for every DOM object, there is a corresponding “virtual DOM object.” A virtual DOM object is a representation of a DOM object, like a lightweight copy.
 
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
+A virtual DOM object has the same properties as a real DOM object, but it lacks the real thing’s power to directly change what’s on the screen.
 
-<div grid="~ cols-2 gap-2" m="-t-2">
+Manipulating the DOM is slow. Manipulating the virtual DOM is much faster because nothing gets drawn onscreen. Think of manipulating the virtual DOM as editing a blueprint, as opposed to moving rooms in an actual house[^1]
 
-```yaml
----
-theme: default
----
-```
+<img src='https://media.giphy.com/media/xT5LMNiPVoEQoc96XC/giphy.gif' alt='Animated react logo' class='image' />
 
-```yaml
----
-theme: seriph
----
-```
+[^1]: Source: this great [quick explainer from Code Academy](https://www.codecademy.com/article/react-virtual-dom).
 
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true">
+<style>
 
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true">
-
-</div>
-
-Read more about [How to use a theme](https://sli.dev/themes/use.html) and
-check out the [Awesome Themes Gallery](https://sli.dev/themes/gallery.html).
-
----
-preload: false
----
-
-# Animations
-
-Animations are powered by [@vueuse/motion](https://motion.vueuse.org/).
-
-```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }">
-  Slidev
-</div>
-```
-
-<div class="w-60 relative mt-6">
-  <div class="relative w-40 h-40">
-    <img
-      v-motion
-      :initial="{ x: 800, y: -100, scale: 1.5, rotate: -50 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-square.png"
-    />
-    <img
-      v-motion
-      :initial="{ y: 500, x: -100, scale: 2 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-circle.png"
-    />
-    <img
-      v-motion
-      :initial="{ x: 600, y: 400, scale: 2, rotate: 100 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-triangle.png"
-    />
-  </div>
-
-  <div
-    class="text-5xl absolute top-14 left-40 text-[#2B90B6] -z-1"
-    v-motion
-    :initial="{ x: -80, opacity: 0}"
-    :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
-    Slidev
-  </div>
-</div>
-
-<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
-<script setup lang="ts">
-const final = {
-  x: 0,
-  y: 0,
-  rotate: 0,
-  scale: 1,
-  transition: {
-    type: 'spring',
-    damping: 10,
-    stiffness: 20,
-    mass: 2
-  }
+.image {
+	width: 200px;
 }
-</script>
+</style>
+---
+---
+# JSX
 
-<div
-  v-motion
-  :initial="{ x:35, y: 40, opacity: 0}"
-  :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
+React uses a syntax extension called JSX that looks like a combination of HTML and JavaScript. 
 
-[Learn More](https://sli.dev/guide/animations.html#motion)
+```ts
+const h1 = <h1>Hello, interns!</h1>
+```
+It gets compiled into regular JavaScript in the browser
+JSX elements are treated like regular old JavaScript expressions, which means they can be saved as a variable, stored in object or array, or passed to a function.
 
-</div>
-
+Just like HTML elements, JSX elements can have attributes, like this: 
+```ts
+const h1 = <h1 id=”intern-title”>Hello, interns!</h1>
+```
+A fun little gotcha with JSX is that all elements in a component must be within the same parent element. If they don't all naturally go within the same parent, you can use a fragment, which can be expressed as an empty tag, like this:
+```ts
+<>
+	<h1>Hello, friends!</h1>
+	<p>We are child elements that need to be wrapped in a parent!</p>
+</>
+```
 ---
 
-# LaTeX
+# Class Components versus Functional Components
+A React component can be written as either a JavaScript class or a function. Functional components are more popular these days, since they can leverage newer feature like React hooks. However, you may encounter class components in older code.
 
-LaTeX is supported out-of-box powered by [KaTeX](https://katex.org/).
-
-<br>
-
-Inline $\sqrt{3x-1}+(1+x)^2$
-
-Block
-$$
-\begin{array}{c}
-
-\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &
-= \frac{4\pi}{c}\vec{\mathbf{j}}    \nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\
-
-\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\
-
-\nabla \cdot \vec{\mathbf{B}} & = 0
-
-\end{array}
-$$
-
-<br>
-
-[Learn more](https://sli.dev/guide/syntax#latex)
-
----
-
-# Diagrams
-
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
-
-<div class="grid grid-cols-3 gap-10 pt-4 -mb-6">
-
-```mermaid {scale: 0.5}
-sequenceDiagram
-    Alice->John: Hello John, how are you?
-    Note over Alice,John: A typical interaction
-```
-
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
-
-```mermaid
-mindmap
-  root((mindmap))
-    Origins
-      Long history
-      ::icon(fa fa-book)
-      Popularisation
-        British popular psychology author Tony Buzan
-    Research
-      On effectivness<br/>and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
-      Mermaid
-```
-
-```plantuml {scale: 0.7}
-@startuml
-
-package "Some Group" {
-  HTTP - [First Component]
-  [Another Component]
+Here's a class component:
+```ts {all|1|2|3|all}
+export class WelcomeHeading extends React.Component {
+   render() {
+       return (
+           <h1>Hello, friends!</h1>
+       )}
 }
 
-node "Other Groups" {
-  FTP - [Second Component]
-  [First Component] --> FTP
-}
-
-cloud {
-  [Example 1]
-}
-
-
-database "MySql" {
-  folder "This is my folder" {
-    [Folder 3]
-  }
-  frame "Foo" {
-    [Frame 4]
-  }
-}
-
-
-[Another Component] --> [Example 1]
-[Example 1] --> [Folder 3]
-[Folder 3] --> [Frame 4]
-
-@enduml
 ```
+And here's the same thing as a functional component:
+```ts {all|1|2|all}
+export const WelcomeHeading = ( ) => {
+   return (
+       <h1>Hello, friends!</h1>
+   )
+}
 
-</div>
-
-[Learn More](https://sli.dev/guide/syntax.html#diagrams)
-
----
-src: ./pages/multiple-entries.md
-hide: false
----
+```
 
 ---
 layout: center
 class: text-center
 ---
 
-# Learn More
+# Keep in touch!
 
-[Documentations](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/showcases.html)
+[Portfolio + Contact Info](https://www.mollyjeanbennett.com/) · [GitHub](https://github.com/MollyJeanB) · [LinkedIn](https://www.linkedin.com/in/mollyjeanbennett/)
+
+<div class='wrapper'>
+	<img src='https://media.giphy.com/media/ia7kRlpGe3IFq/giphy.gif' alt='Animated react logo' class='image' />
+</div>
+
+<style>
+.wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.image {
+	width: 250px;
+}
+</style>

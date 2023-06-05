@@ -4,12 +4,23 @@ Follow along in `slides.md`.
 
 Built via [Slidev](https://github.com/slidevjs/slidev)!
 
+## Getting Started
+
+Node Version Manager (NVM) is recommended to maintain node version consistency with dependencies. If you don't already have NVM set up on your computer, use this guide to get started. To specify the node version in the `.nvmrc` file:
+
+```
+nvm use
+```
+To install dependencies:
+
+```
+yarn
+```
 To start the slide show:
+```
+yarn dev
+```
+Visit http://localhost:3030
 
-- `npm install`
-- `npm run dev`
-- visit http://localhost:3030
 
-Edit the [slides.md](./slides.md) to see the changes.
-
-Learn more about Slidev on [documentations](https://sli.dev/).
+Learn more about [Slidev](https://sli.dev/).
